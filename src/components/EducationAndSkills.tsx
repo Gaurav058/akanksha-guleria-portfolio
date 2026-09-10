@@ -14,42 +14,43 @@ export default function EducationAndSkills() {
   ];
 
   return (
-    <section id="education" className="py-20 sm:py-28 border-b border-white/[0.07] bg-[#080a0b] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="education" className="py-28 sm:py-36 border-b border-editorial bg-[#080a0b] relative">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-          {/* Left Column: Education (5 Cols) — Simple, Refined */}
+          {/* Left Column: Education (5 Cols) — Minimal, Typographic */}
           <div className="lg:col-span-5 space-y-4">
-            <div className="text-xs font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
-              09 — ACADEMIC FOUNDATION
+            <div className="text-[11px] font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
+              09 — ACADEMIC CREDENTIAL
             </div>
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white uppercase">
+            <h2 className="text-section-headline font-extrabold tracking-tight text-[#f5f6f7] uppercase">
               EDUCATION
             </h2>
 
-            <div className="border-t border-white/[0.08] pt-6 space-y-2">
-              <div className="text-base sm:text-lg font-bold text-white">
+            <div className="pt-6 border-t border-editorial space-y-3">
+              <div className="text-lg sm:text-xl font-bold text-white tracking-wide">
                 Himachal Pradesh University, Shimla
               </div>
-              <div className="text-xs font-semibold text-[#c5a880] tracking-wider uppercase">
-                Master of Business Administration (MBA)
+              <div className="text-sm font-semibold text-[#dfc298] tracking-wider uppercase">
+                MBA — Business Administration & Management
               </div>
-              <div className="text-xs text-[#9ca3af]">
-                Business Administration and Management, General • 2016–2019
+              <div className="text-xs font-mono text-[#6e767c]">
+                Class of 2016 – 2019
               </div>
-              <p className="text-xs text-[#6b7280] leading-relaxed pt-2">
-                Primary academic record aligned with active LinkedIn executive positioning.
+              <p className="text-xs text-[#949a9e] leading-relaxed pt-2">
+                Postgraduate degree in business administration providing the foundational rigor for
+                commercial enterprise sales, business analysis, and organizational governance.
               </p>
             </div>
           </div>
 
-          {/* Right Column: LinkedIn Skills as Refined Typography (7 Cols) */}
+          {/* Right Column: Verified LinkedIn Skills (7 Cols) — Refined Editorial List */}
           <div className="lg:col-span-7 space-y-4">
             <div className="flex items-center justify-between">
               <div>
-                <div className="text-xs font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
+                <div className="text-[11px] font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
                   10 — VERIFIED COMPETENCIES
                 </div>
-                <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white uppercase">
+                <h2 className="text-section-headline font-extrabold tracking-tight text-[#f5f6f7] uppercase">
                   LINKEDIN SKILLS
                 </h2>
               </div>
@@ -57,24 +58,24 @@ export default function EducationAndSkills() {
                 href="https://www.linkedin.com/in/akanksha-guleria-a55264210/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden sm:inline-flex items-center space-x-1.5 text-xs text-[#c5a880] hover:underline"
+                className="hidden sm:inline-flex items-center space-x-1.5 text-xs text-[#c5a880] hover:text-[#dfc298] transition-colors"
               >
-                <span>LinkedIn Record</span>
+                <span>View LinkedIn Record</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>
 
-            {/* Skills as Refined Editorial Typography List */}
-            <div className="border-t border-white/[0.08] pt-4 divide-y divide-white/[0.05]">
+            {/* Skills Editorial Hairline List */}
+            <div className="pt-2 divide-y divide-white/[0.06] border-t border-editorial">
               {verifiedSkills.map((skill, idx) => (
                 <div
                   key={idx}
-                  className="py-3 flex items-center justify-between group"
+                  className="py-3.5 flex items-center justify-between group hover:bg-white/[0.01] transition-colors"
                 >
-                  <span className="text-xs sm:text-sm font-semibold tracking-wide text-[#e5e7eb] group-hover:text-[#dfc298] transition-colors">
+                  <span className="text-xs sm:text-sm font-semibold tracking-wide text-[#f5f6f7] group-hover:text-[#dfc298] transition-colors">
                     {skill.name}
                   </span>
-                  <span className="text-[11px] font-mono text-[#6b7280] group-hover:text-[#c5a880] transition-colors">
+                  <span className="text-[11px] font-mono text-[#6e767c] group-hover:text-[#c5a880] transition-colors">
                     {skill.note}
                   </span>
                 </div>
@@ -86,3 +87,4 @@ export default function EducationAndSkills() {
     </section>
   );
 }
+

@@ -1,97 +1,139 @@
 "use client";
 
 import React from "react";
-import { ArrowDown } from "lucide-react";
 
 export default function Leadership() {
-  const leadershipStory = [
+  const leadershipScale = [
     {
-      level: "01",
-      title: "BUSINESS LEADERSHIP",
-      subtitle: "EXECUTIVE OVERSIGHT & COMMERCIAL STRATEGY",
-      detail: "Strategic target setting, floor performance governance, conversion accountability, and commercial growth.",
+      metric: "5",
+      title: "SALES MANAGERS DIRECTED",
+      context: "MANAGERIAL MENTORING & SUPERVISION",
+      narrative:
+        "Led and coached five Sales Managers as Business Head. Instituted daily pipeline accountability, structured deal qualification frameworks, and consultative sales rigor across teams.",
     },
     {
-      level: "02",
-      title: "5 SALES MANAGERS",
-      subtitle: "MANAGERIAL MENTORING & SUPERVISION",
-      detail: "Leading and coaching five Sales Managers to build accountability, process rigor, and consultative sales discipline.",
+      metric: "3",
+      title: "SALES TEAMS COORDINATED",
+      context: "SIMULTANEOUS FLOOR GOVERNANCE",
+      narrative:
+        "Directed three active floor teams simultaneously in high-velocity trading brokerage environments, aligning daily conversion objectives, pipeline acceleration, and client retention.",
     },
     {
-      level: "03",
-      title: "TEAMS OF UP TO 10 MEMBERS EACH",
-      subtitle: "HIGH-CONVERSION SALES CAPACITY",
-      detail: "Overseeing multi-tier commercial trading floor teams driving structured lead generation, onboarding, and retention.",
+      metric: "10",
+      title: "MEMBERS PER UNIT CAPACITY",
+      context: "HIGH-CONVERSION SALES STRUCTURES",
+      narrative:
+        "Structured and managed commercial trading floor units of up to 10 members each, building a high-performance culture founded on consultative customer acquisition.",
     },
     {
-      level: "04",
-      title: "CLIENT-FACING SALES EXECUTION",
-      subtitle: "3 ACTIVE SALES TEAMS MANAGED",
-      detail: "Direct floor execution, account manager coaching, client relationship longevity, and customer-centric sales practices.",
+      metric: "100%",
+      title: "COMMERCIAL REVENUE OWNERSHIP",
+      context: "TARGET ACCOUNTABILITY & GROWTH",
+      narrative:
+        "End-to-end commercial responsibility across floor operations, client onboarding velocity, introducing broker partnerships, and monthly revenue targets.",
     },
   ];
 
   return (
-    <section id="leadership" className="py-24 sm:py-32 border-b border-white/[0.07] bg-[#080a0b] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="leadership" className="py-28 sm:py-36 border-b border-editorial bg-[#080a0b] relative">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-24 pb-8 border-b border-white/[0.07] gap-6">
-          <div>
-            <div className="text-xs font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold mb-2">
-              05 — LEADERSHIP
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 pb-12 sm:pb-16 border-b border-editorial items-end">
+          <div className="lg:col-span-8 space-y-3">
+            <div className="text-[11px] font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
+              05 — COMMERCIAL GOVERNANCE
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white uppercase">
+            <h2 className="text-section-headline font-extrabold tracking-tight text-[#f5f6f7] uppercase">
               LEADERSHIP AT SCALE.
+              <br />
+              <span className="font-serif italic font-normal text-[#dfc298]">
+                PEOPLE. PERFORMANCE. PROCESS.
+              </span>
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#9ca3af] max-w-md font-normal leading-relaxed">
-            I lead with a focus on people, performance, and process. Building high-performing teams
-            through accountability, coaching, and customer-centric commercial discipline.
-          </p>
+          <div className="lg:col-span-4">
+            <p className="text-xs sm:text-sm text-[#949a9e] font-normal leading-relaxed">
+              I lead with a discipline centered on coaching, operational accountability, and customer-centric
+              commercial excellence. Scaling teams from individual contributors to multi-tier sales floors.
+            </p>
+          </div>
         </div>
 
-        {/* Organizational Leadership Story Visual */}
-        <div className="max-w-3xl mx-auto space-y-4">
-          {leadershipStory.map((step, idx) => (
-            <React.Fragment key={step.level}>
-              {/* Step Card */}
-              <div className="p-6 sm:p-8 rounded-lg border border-white/[0.08] bg-[#0d1112] hover:border-[#c5a880]/40 transition-all group">
-                <div className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2 mb-2">
-                  <h3 className="text-base sm:text-xl font-bold tracking-wide text-white uppercase group-hover:text-[#dfc298] transition-colors">
-                    {step.title}
-                  </h3>
-                  <span className="text-[11px] font-mono tracking-widest text-[#c5a880] uppercase">
-                    {step.subtitle}
-                  </span>
+        {/* Large Number + Narrative Layout (No HR cards, No flowcharts) */}
+        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/[0.08] border-b border-editorial">
+          {leadershipScale.slice(0, 2).map((item, idx) => (
+            <div
+              key={idx}
+              className="py-12 sm:py-16 md:px-10 first:pl-0 last:pr-0 space-y-6 flex flex-col justify-between group"
+            >
+              <div className="flex items-center justify-between text-xs font-mono text-[#6e767c]">
+                <span className="text-[#c5a880] font-semibold">0{idx + 1}</span>
+                <span className="tracking-widest uppercase text-[10px]">{item.context}</span>
+              </div>
+
+              <div className="space-y-3">
+                <div className="text-6xl sm:text-7xl lg:text-8xl font-extrabold font-mono tracking-tight text-white group-hover:text-[#dfc298] transition-colors">
+                  {item.metric}
                 </div>
-                <p className="text-xs sm:text-sm text-[#9ca3af] leading-relaxed">
-                  {step.detail}
+                <h3 className="text-base sm:text-lg font-bold tracking-wider text-white uppercase">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#949a9e] leading-relaxed max-w-lg">
+                  {item.narrative}
                 </p>
               </div>
 
-              {/* Connecting Line & Subtle Arrow (Between Steps) */}
-              {idx < leadershipStory.length - 1 && (
-                <div className="flex items-center justify-center py-1">
-                  <div className="flex flex-col items-center">
-                    <div className="h-4 w-px bg-white/15" />
-                    <ArrowDown className="w-3 h-3 text-[#c5a880]" />
-                  </div>
+              <div className="pt-4 border-t border-editorial-subtle flex items-center space-x-2 text-[11px] font-mono text-[#6e767c]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#c5a880]" />
+                <span>Executive governance & coaching record</span>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Second Row of Large Number + Narrative */}
+        <div className="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-white/[0.08] border-b border-editorial">
+          {leadershipScale.slice(2, 4).map((item, idx) => (
+            <div
+              key={idx}
+              className="py-12 sm:py-16 md:px-10 first:pl-0 last:pr-0 space-y-6 flex flex-col justify-between group"
+            >
+              <div className="flex items-center justify-between text-xs font-mono text-[#6e767c]">
+                <span className="text-[#c5a880] font-semibold">0{idx + 3}</span>
+                <span className="tracking-widest uppercase text-[10px]">{item.context}</span>
+              </div>
+
+              <div className="space-y-3">
+                <div className="text-6xl sm:text-7xl lg:text-8xl font-extrabold font-mono tracking-tight text-white group-hover:text-[#dfc298] transition-colors">
+                  {item.metric}
                 </div>
-              )}
-            </React.Fragment>
+                <h3 className="text-base sm:text-lg font-bold tracking-wider text-white uppercase">
+                  {item.title}
+                </h3>
+                <p className="text-xs sm:text-sm text-[#949a9e] leading-relaxed max-w-lg">
+                  {item.narrative}
+                </p>
+              </div>
+
+              <div className="pt-4 border-t border-editorial-subtle flex items-center space-x-2 text-[11px] font-mono text-[#6e767c]">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#c5a880]" />
+                <span>Commercial performance & accountability</span>
+              </div>
+            </div>
           ))}
         </div>
 
         {/* Supporting Leadership Principle */}
-        <div className="mt-16 sm:mt-20 pt-8 border-t border-white/[0.05] text-center">
-          <div className="font-serif italic text-lg sm:text-xl text-[#e5e7eb]">
-            &ldquo;Better people. Stronger teams. Measurable impact.&rdquo;
-          </div>
-          <div className="text-[10px] font-mono tracking-widest text-[#6b7280] uppercase mt-2">
-            EXECUTIVE MANAGEMENT RECORD // VERIFIED IN ATS & EXECUTIVE DOSSIER
+        <div className="mt-12 pt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-[#6e767c] gap-4">
+          <blockquote className="font-serif italic text-base sm:text-lg text-[#cbd5e1]">
+            &ldquo;Better people. Stronger teams. Measurable commercial impact.&rdquo;
+          </blockquote>
+          <div className="text-[10px] font-mono tracking-widest text-[#6e767c] uppercase">
+            VERIFIED MANAGEMENT RECORD // ATS & EXECUTIVE DOSSIER
           </div>
         </div>
       </div>
     </section>
   );
 }
+

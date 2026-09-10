@@ -18,7 +18,7 @@ export default function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto no-print"
+      className="fixed inset-0 z-[1300] bg-black/85 backdrop-blur-md flex items-center justify-center p-4 sm:p-6 overflow-y-auto no-print"
       onClick={onClose}
       role="dialog"
       aria-modal="true"

@@ -10,8 +10,14 @@
     --border: rgba(255, 255, 255, 0.08);
     --border-strong: rgba(255, 255, 255, 0.16);
     --accent-gold: #c5a880;
-    --accent-gold-light: #e4caa4;
+    --accent-gold-light: #dfc298;
     --accent-gold-subtle: rgba(197, 168, 128, 0.12);
+
+    /* Strict Z-Index Architecture */
+    --z-header: 1000;
+    --z-overlay: 1100;
+    --z-drawer: 1200;
+    --z-modal: 1300;
   }
 
   html {
@@ -28,9 +34,9 @@
     overflow-x: hidden;
   }
 
-  /* Thin subtle scrollbar */
+  /* Thin architectural scrollbar */
   ::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
   }
   ::-webkit-scrollbar-track {
     background: #080a0b;
@@ -51,9 +57,37 @@
 
 /* Subtle architectural grid pattern */
 .bg-grid-editorial {
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 72px 72px;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  background-size: 80px 80px;
+}
+
+/* Hairline borders for editorial separation */
+.border-editorial {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.border-editorial-subtle {
+  border-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Fluid typography utilities */
+.text-hero-headline {
+  font-size: clamp(2.4rem, 5.5vw, 5.25rem);
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+}
+
+.text-section-headline {
+  font-size: clamp(1.75rem, 3.8vw, 3.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+}
+
+.text-metric-number {
+  font-size: clamp(2.5rem, 5vw, 4.25rem);
+  line-height: 1;
+  letter-spacing: -0.03em;
 }
 
 .text-gold {

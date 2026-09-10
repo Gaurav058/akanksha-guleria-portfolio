@@ -6,114 +6,151 @@ import { MapPin } from "lucide-react";
 export default function CareerArc() {
   const careerTimeline = [
     {
-      period: "JUL 2026 – PRESENT",
+      period: "2026 – PRESENT",
+      exactDates: "Jul 2026 – Present",
       company: "AETHORA TECHNOLOGIES",
       role: "SENIOR CONSULTANT",
       location: "Dubai, United Arab Emirates",
       type: "Contract • On-site",
-      summary: "Commercial expansion consulting, client acquisition strategy, and cross-border financial technology advisory.",
+      summary: "Senior commercial advisory for international expansion, financial technology client acquisition strategy, and cross-border partnership structuring.",
       isCurrent: true,
+      category: "COMMERCIAL ADVISORY",
     },
     {
-      period: "JAN 2025 – PRESENT",
+      period: "2025 – PRESENT",
+      exactDates: "Jan 2025 – Present",
       company: "FX GLOBAL CONSULTANT",
       role: "HEAD OF SALES OPERATIONS",
       location: "United Arab Emirates",
       type: "Full-time • On-site",
-      summary: "Directing sales floor operations, conversion strategy, performance coaching, and team accountability across regional markets.",
+      summary: "Directing commercial sales floor operations, conversion strategy, performance coaching, and team accountability across regional financial markets.",
       isCurrent: true,
+      category: "OPERATIONS LEADERSHIP",
     },
     {
-      period: "MAY 2024 – PRESENT",
+      period: "2024 – PRESENT",
+      exactDates: "May 2024 – Present",
       company: "FX GLOBAL CONSULTANTS",
       role: "HEAD OF BROKERAGE SOLUTIONS",
       location: "Dubai, United Arab Emirates",
       type: "Full-time",
-      summary: "Structuring brokerage partnerships, introducing broker (IB) networks, and onboarding client accounts.",
+      summary: "Structuring institutional brokerage partnerships, expanding introducing broker (IB) networks, and managing high-value commercial accounts.",
       isCurrent: true,
+      category: "BROKERAGE SOLUTIONS",
     },
     {
-      period: "FEB 2018 – FEB 2026",
+      period: "2018 – 2026",
+      exactDates: "Feb 2018 – Feb 2026",
       company: "FOREX",
       role: "FOREX TRADER",
       location: "Chandigarh, India",
       type: "Full-time",
-      summary: "Hands-on foreign exchange trading, fundamental currency analysis, risk profiling, and market dynamics.",
+      summary: "Direct foreign exchange trading, fundamental currency analysis, risk profiling, liquidity understanding, and currency market dynamics.",
+      isCurrent: false,
+      category: "MARKET TRADING",
     },
     {
-      period: "FEB 2019 – APR 2021",
+      period: "2019 – 2021",
+      exactDates: "Feb 2019 – Apr 2021",
       company: "XTREAMFOREX",
       role: "BUSINESS DEVELOPMENT EXECUTIVE",
       location: "India",
       type: "Full-time",
-      summary: "Brokerage client acquisition, trader onboarding, and managing client accounts across financial markets.",
+      summary: "Brokerage client acquisition, trader onboarding, client account lifecycle management, and regional market business development.",
+      isCurrent: false,
+      category: "BUSINESS DEVELOPMENT",
     },
     {
       period: "2016 – 2021",
+      exactDates: "2016 – 2021",
       company: "INSPIRIS MEDIA LTD.",
       role: "SALES EXECUTIVE",
       location: "India",
       type: "Full-time",
-      summary: "Foundational B2B/B2C sales generation, client prospecting, and account management.",
+      summary: "Foundational B2B and B2C sales generation, client prospecting, relationship building, and account management.",
+      isCurrent: false,
+      category: "SALES EXECUTION",
     },
   ];
 
   return (
-    <section id="experience" className="py-24 sm:py-32 border-b border-white/[0.07] bg-[#080a0b] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
+    <section id="experience" className="py-28 sm:py-36 border-b border-editorial bg-[#080a0b] relative">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20 pb-8 border-b border-white/[0.07] gap-6">
-          <div>
-            <div className="text-xs font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold mb-2">
-              03 — CAREER TIMELINE
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 pb-12 sm:pb-16 border-b border-editorial items-end">
+          <div className="lg:col-span-8 space-y-3">
+            <div className="text-[11px] font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
+              03 — CAREER PROGRESSION
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white uppercase">
+            <h2 className="text-section-headline font-extrabold tracking-tight text-[#f5f6f7] uppercase">
               THE CAREER ARC.
+              <br />
+              <span className="font-serif italic font-normal text-[#dfc298]">
+                CHRONOLOGY & APPOINTMENTS.
+              </span>
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#9ca3af] max-w-md font-normal leading-relaxed">
-            Directly sourced from verified LinkedIn and executive resume records. Faithfully
-            reflecting multi-dimensional activity across trading, brokerage leadership, and sales
-            operations.
-          </p>
+          <div className="lg:col-span-4">
+            <p className="text-xs sm:text-sm text-[#949a9e] font-normal leading-relaxed">
+              Sourced directly from verified LinkedIn and executive resume records. Faithfully
+              reflecting commercial activity spanning trading, brokerage leadership, and sales operations.
+            </p>
+          </div>
         </div>
 
-        {/* Premium Vertical Editorial Timeline */}
-        <div className="max-w-4xl mx-auto divide-y divide-white/[0.07]">
+        {/* Expansive 12-Column Editorial Timeline (Full Width, Zero Centered Box) */}
+        <div className="divide-y divide-white/[0.08] border-b border-editorial">
           {careerTimeline.map((item, idx) => (
             <div
               key={idx}
-              className="py-10 first:pt-0 last:pb-0 grid grid-cols-1 md:grid-cols-12 gap-6 items-baseline group"
+              className="py-10 sm:py-12 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12 items-start group hover:bg-white/[0.01] transition-colors"
             >
-              {/* Date Column (3 Cols) */}
-              <div className="md:col-span-4 space-y-1">
-                <div className="text-sm sm:text-base font-mono font-bold tracking-wider text-white group-hover:text-[#dfc298] transition-colors">
+              {/* Col 1-3: Strong Year Callout */}
+              <div className="lg:col-span-3 space-y-2">
+                <div className="text-2xl sm:text-3xl font-extrabold font-mono tracking-tight text-white group-hover:text-[#dfc298] transition-colors">
                   {item.period}
                 </div>
+                <div className="flex items-center space-x-2 text-xs font-mono text-[#6e767c]">
+                  <span>{item.exactDates}</span>
+                </div>
                 {item.isCurrent && (
-                  <span className="inline-block text-[10px] font-mono tracking-widest text-[#c5a880] uppercase">
-                    ACTIVE APPOINTMENT
-                  </span>
+                  <div className="inline-flex items-center space-x-1.5 pt-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#c5a880] animate-pulse" />
+                    <span className="text-[10px] font-mono tracking-widest text-[#c5a880] uppercase">
+                      ACTIVE APPOINTMENT
+                    </span>
+                  </div>
                 )}
               </div>
 
-              {/* Role & Company Column (8 Cols) */}
-              <div className="md:col-span-8 space-y-2">
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h3 className="text-lg sm:text-xl font-bold tracking-wide text-white uppercase">
+              {/* Col 4-8: Role, Company, Location */}
+              <div className="lg:col-span-5 space-y-3">
+                <div className="text-[10px] font-mono tracking-widest text-[#6e767c] uppercase">
+                  {item.category}
+                </div>
+
+                <div>
+                  <h3 className="text-lg sm:text-xl font-bold tracking-wide text-white uppercase group-hover:text-[#dfc298] transition-colors">
                     {item.role}
                   </h3>
-                  <div className="flex items-center space-x-1.5 text-xs text-[#9ca3af]">
-                    <MapPin className="w-3.5 h-3.5 text-[#c5a880]" />
-                    <span>{item.location}</span>
+                  <div className="text-sm font-semibold tracking-wider text-[#c5a880] uppercase mt-0.5">
+                    {item.company}
                   </div>
                 </div>
 
-                <div className="text-sm font-semibold tracking-wider text-[#c5a880] uppercase">
-                  {item.company}
+                <div className="flex flex-wrap items-center gap-3 text-xs text-[#949a9e]">
+                  <div className="flex items-center space-x-1.5">
+                    <MapPin className="w-3.5 h-3.5 text-[#c5a880]" />
+                    <span>{item.location}</span>
+                  </div>
+                  <span className="text-white/20">•</span>
+                  <span className="text-[11px] font-mono text-[#6e767c]">{item.type}</span>
                 </div>
+              </div>
 
-                <p className="text-xs sm:text-sm text-[#9ca3af] leading-relaxed pt-1">
+              {/* Col 9-12: Role Narrative */}
+              <div className="lg:col-span-4 lg:pl-6 border-l-0 lg:border-l border-white/[0.06] pt-2 lg:pt-0">
+                <p className="text-xs sm:text-sm text-[#949a9e] leading-relaxed">
                   {item.summary}
                 </p>
               </div>
@@ -121,11 +158,20 @@ export default function CareerArc() {
           ))}
         </div>
 
-        {/* Minimal Chronology Integrity Note */}
-        <div className="mt-16 pt-6 border-t border-white/[0.05] text-center text-xs text-[#6b7280] font-mono tracking-wider">
-          AUTHENTIC CHRONOLOGY PRESERVED ACCORDING TO PRIMARY SOURCE EVIDENCE
+        {/* Chronology Sourcing Footnote */}
+        <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-[#6e767c] gap-3">
+          <div className="flex items-center space-x-2">
+            <span className="w-1.5 h-1.5 rounded-full bg-[#c5a880]" />
+            <span className="tracking-wider uppercase font-mono text-[10px]">
+              Verified primary source credentials • Concurrent appointments preserved accurately
+            </span>
+          </div>
+          <div className="text-[10px] font-mono tracking-wider uppercase">
+            JURISDICTIONS: UNITED ARAB EMIRATES • INDIA
+          </div>
         </div>
       </div>
     </section>
   );
 }
+

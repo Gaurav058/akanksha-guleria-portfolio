@@ -20,7 +20,7 @@ export default function Home() {
   const [profileModalOpen, setProfileModalOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#080a0d] text-[#f4f5f7] flex flex-col antialiased selection:bg-emerald-500/30 selection:text-white">
+    <div className="min-h-screen bg-[#080a0b] text-[#f5f6f7] flex flex-col antialiased selection:bg-[#c5a880]/30 selection:text-white">
       {/* Sticky Executive Navigation Bar */}
       <Navbar onOpenProfile={() => setProfileModalOpen(true)} />
 

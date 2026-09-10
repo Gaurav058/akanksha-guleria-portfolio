@@ -1,116 +1,130 @@
 "use client";
 
 import React from "react";
-import { ArrowRight } from "lucide-react";
 
 export default function InternationalExperience() {
   const corridorPoints = [
     {
+      num: "01",
       title: "CROSS-MARKET ACQUISITION",
-      desc: "Proven ability to prospect, onboard, and retain clients across differing regional and international financial hubs.",
+      desc: "Proven ability to prospect, onboard, and retain clients across differing regional and international financial hubs with tailored commercial terms.",
     },
     {
+      num: "02",
       title: "COMMERCIAL ADAPTABILITY",
-      desc: "Scaling sales operations from high-volume Indian regional trading markets to institutional Dubai brokerage environments.",
+      desc: "Scaling sales operations from high-volume Indian regional trading markets to institutional Dubai brokerage and advisory environments.",
     },
     {
+      num: "03",
       title: "GLOBAL TRADING CORRIDOR",
-      desc: "Deep familiarity with international currency trading hours, cross-market client behavior, and partner networks.",
+      desc: "Deep familiarity with international currency market hours, cross-market investor behavior, introducing broker channels, and partner networks.",
     },
   ];
 
   return (
-    <section id="international" className="py-24 sm:py-32 border-b border-white/[0.07] bg-[#080a0b] relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
+    <section id="international" className="py-28 sm:py-36 border-b border-editorial bg-[#080a0b] relative">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20 pb-8 border-b border-white/[0.07] gap-6">
-          <div>
-            <div className="text-xs font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold mb-2">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 pb-12 sm:pb-16 border-b border-editorial items-end">
+          <div className="lg:col-span-8 space-y-3">
+            <div className="text-[11px] font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold">
               06 — GEOGRAPHIC REACH
             </div>
-            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white uppercase flex items-center space-x-3">
+            <h2 className="text-section-headline font-extrabold tracking-tight text-[#f5f6f7] uppercase flex flex-wrap items-center gap-3">
               <span>INDIA</span>
-              <span className="text-[#c5a880] font-light">↔</span>
+              <span className="text-[#c5a880] font-light">───</span>
               <span>UAE</span>
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#9ca3af] max-w-md font-normal leading-relaxed">
-            Cross-market exposure. Global client acquisition. International sales. Bridging emerging
-            commercial centers with primary Middle Eastern financial corridors.
-          </p>
+          <div className="lg:col-span-4">
+            <p className="text-xs sm:text-sm text-[#949a9e] font-normal leading-relaxed">
+              Cross-market exposure. Global client acquisition. International sales leadership bridging
+              emerging commercial centers with primary Middle Eastern financial corridors.
+            </p>
+          </div>
         </div>
 
-        {/* Sophisticated Route Corridor Graphic */}
-        <div className="p-8 sm:p-12 rounded-lg border border-white/[0.08] bg-[#0d1112] relative overflow-hidden mb-12">
-          {/* Subtle World Grid Motif */}
-          <div className="absolute inset-0 bg-grid-editorial opacity-40 pointer-events-none" />
-
-          <div className="relative z-10 grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+        {/* Subtle, Architectural India → UAE Geographic Corridor (Zero 3D globes or plane animations) */}
+        <div className="py-14 sm:py-20 border-b border-editorial">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
             {/* Origin: India */}
-            <div className="md:col-span-4 space-y-2">
-              <div className="text-[10px] font-mono tracking-widest text-[#6b7280] uppercase">
+            <div className="lg:col-span-4 space-y-3">
+              <div className="text-[10px] font-mono tracking-widest text-[#6e767c] uppercase">
                 ORIGIN // COMMERCIAL FOUNDATION
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-white">INDIA</div>
-              <div className="text-xs font-medium text-[#c5a880] tracking-wider uppercase">
-                Chandigarh • Bengaluru
+              <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                INDIA
               </div>
-              <p className="text-xs text-[#9ca3af] leading-relaxed pt-2">
-                Foundational sales discipline, active FX trading execution, and business development
-                across regional financial networks.
+              <div className="text-xs font-semibold text-[#c5a880] tracking-wider uppercase">
+                Chandigarh • Regional Networks
+              </div>
+              <p className="text-xs sm:text-sm text-[#949a9e] leading-relaxed pt-1">
+                Foundational sales discipline, direct foreign exchange trading execution, and early
+                business development across regional financial networks.
               </p>
             </div>
 
-            {/* Connecting Corridor Line */}
-            <div className="md:col-span-4 flex flex-col items-center justify-center py-4">
-              <div className="text-[10px] font-mono tracking-[0.2em] text-[#c5a880] uppercase mb-2">
+            {/* Subtle Editorial Corridor Divider (Hairline with Minimalist Node) */}
+            <div className="lg:col-span-4 flex flex-col items-center justify-center py-4 px-2">
+              <div className="text-[10px] font-mono tracking-[0.24em] text-[#c5a880] uppercase mb-3">
                 COMMERCIAL CORRIDOR
               </div>
-              <div className="w-full flex items-center justify-center relative my-2">
-                <div className="w-full h-px bg-gradient-to-r from-transparent via-[#c5a880]/60 to-transparent" />
-                <div className="absolute p-1.5 rounded-full bg-[#080a0b] border border-[#c5a880] text-[#c5a880]">
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </div>
+              <div className="w-full flex items-center justify-center relative">
+                <div className="w-full h-px bg-white/[0.15]" />
+                <div className="absolute w-2.5 h-2.5 rounded-full bg-[#c5a880] ring-4 ring-[#080a0b]" />
               </div>
-              <div className="text-[10px] text-[#6b7280] font-mono tracking-widest uppercase mt-2">
-                International Client Flow
+              <div className="text-[10px] text-[#6e767c] font-mono tracking-widest uppercase mt-3">
+                CROSS-BORDER CAPITAL & CLIENT FLOW
               </div>
             </div>
 
             {/* Destination: Dubai, UAE */}
-            <div className="md:col-span-4 space-y-2 text-left md:text-right">
-              <div className="text-[10px] font-mono tracking-widest text-[#6b7280] uppercase">
+            <div className="lg:col-span-4 space-y-3 text-left lg:text-right">
+              <div className="text-[10px] font-mono tracking-widest text-[#6e767c] uppercase">
                 COMMERCIAL HUB // GCC
               </div>
-              <div className="text-2xl sm:text-3xl font-extrabold text-white">DUBAI, UAE</div>
-              <div className="text-xs font-medium text-[#c5a880] tracking-wider uppercase">
+              <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+                DUBAI, UAE
+              </div>
+              <div className="text-xs font-semibold text-[#c5a880] tracking-wider uppercase">
                 Financial Markets & Brokerage
               </div>
-              <p className="text-xs text-[#9ca3af] leading-relaxed pt-2">
+              <p className="text-xs sm:text-sm text-[#949a9e] leading-relaxed pt-1">
                 Head of Brokerage Solutions, Head of Sales Operations, and Senior Consultant
-                driving international commercial expansion.
+                driving international commercial expansion and brokerage governance.
               </p>
             </div>
           </div>
         </div>
 
-        {/* 3 Corridor Strategic Highlights */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {corridorPoints.map((pt, idx) => (
-            <div key={idx} className="border-t border-white/[0.08] pt-5 space-y-2">
-              <div className="text-xs font-mono text-[#c5a880] tracking-widest">
-                0{idx + 1} // STRATEGY
+        {/* 3 Corridor Strategic Highlights — Minimal Editorial Split */}
+        <div className="grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/[0.08] pt-12 border-b border-editorial pb-16">
+          {corridorPoints.map((pt) => (
+            <div key={pt.num} className="py-6 md:py-0 md:px-8 first:pl-0 last:pr-0 space-y-3">
+              <div className="text-[10px] font-mono text-[#c5a880] tracking-widest">
+                {pt.num} • INTERNATIONAL STRATEGY
               </div>
-              <h3 className="text-xs sm:text-sm font-bold tracking-wider text-white uppercase">
+              <h3 className="text-sm font-bold tracking-wider text-white uppercase">
                 {pt.title}
               </h3>
-              <p className="text-xs text-[#9ca3af] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#949a9e] leading-relaxed">
                 {pt.desc}
               </p>
             </div>
           ))}
         </div>
+
+        {/* Bottom Sourcing Note */}
+        <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-[#6e767c] gap-3">
+          <div className="text-[10px] font-mono tracking-wider uppercase">
+            ESTABLISHED TRACK RECORD ACROSS GCC AND SOUTH ASIAN FINANCIAL CORRIDORS
+          </div>
+          <div className="text-[10px] font-mono tracking-wider">
+            PRIMARY LOCATION: DUBAI, UNITED ARAB EMIRATES
+          </div>
+        </div>
       </div>
     </section>
   );
 }
+

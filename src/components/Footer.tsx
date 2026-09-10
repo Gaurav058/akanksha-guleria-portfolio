@@ -10,15 +10,15 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[#060809] border-t border-white/[0.07] py-16 text-xs text-[#9ca3af] relative">
-      <div className="max-w-7xl mx-auto px-5 sm:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-white/[0.06] items-start">
+    <footer className="bg-[#060809] border-t border-editorial py-16 text-xs text-[#949a9e] relative">
+      <div className="max-w-[1440px] mx-auto px-6 sm:px-10 lg:px-16">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 pb-12 border-b border-editorial-subtle items-start">
           {/* Brand Col */}
           <div className="md:col-span-6 space-y-3">
             <div className="text-base font-bold tracking-[0.2em] text-white uppercase">
               AKANKSHA GULERIA
             </div>
-            <div className="text-xs text-[#c5a880] font-medium tracking-wider uppercase">
+            <div className="text-xs text-[#dfc298] font-medium tracking-wider uppercase">
               International Commercial Leader • Financial Markets & Investment Solutions
             </div>
             <p className="text-xs text-[#9ca3af] max-w-md leading-relaxed">
