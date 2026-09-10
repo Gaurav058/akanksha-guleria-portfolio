@@ -79,8 +79,8 @@ export default function ProfileModal({ isOpen, onClose }: ProfileModalProps) {
               </div>
               <div className="flex items-center space-x-1.5">
                 <Phone className="w-3.5 h-3.5 text-[#c5a880]" />
-                <a href="tel:+919587235665" className="hover:underline">
-                  +91 95872 35665
+                <a href="tel:+916363112082" className="hover:underline">
+                  +91 6363112082
                 </a>
               </div>
               <div className="flex items-center space-x-1.5">

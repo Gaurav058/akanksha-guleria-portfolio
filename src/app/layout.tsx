@@ -122,7 +122,7 @@ export default function RootLayout({
     ],
     sameAs: ["https://www.linkedin.com/in/akanksha-guleria-a55264210/"],
     email: "mailto:akankshaguleria4@gmail.com",
-    telephone: "+91 95872 35665",
+    telephone: "+91 6363112082",
   };
 
   return (

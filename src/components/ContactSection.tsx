@@ -106,7 +106,7 @@ export default function ContactSection() {
                 <div className="flex items-center justify-between text-[10px] font-mono tracking-widest text-[#6e767c] uppercase">
                   <span>DIRECT TELEPHONE</span>
                   <button
-                    onClick={() => copyToClipboard("+919587235665", "phone")}
+                    onClick={() => copyToClipboard("+916363112082", "phone")}
                     className="text-[#949a9e] hover:text-white p-1 transition-colors"
                     title="Copy Phone number"
                     aria-label="Copy Phone number"
@@ -125,10 +125,10 @@ export default function ContactSection() {
                   </button>
                 </div>
                 <a
-                  href="tel:+919587235665"
+                  href="tel:+916363112082"
                   className="text-base sm:text-lg font-bold text-white hover:text-[#dfc298] transition-colors block font-mono"
                 >
-                  +91 95872 35665
+                  +91 6363112082
                 </a>
                 <div className="text-xs text-[#6e767c]">Direct Line • India & UAE Timezones</div>
               </div>

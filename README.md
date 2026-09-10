@@ -21,7 +21,7 @@ This repository houses the production-grade executive digital identity website f
 - **07 — Business Point**: Case study showcase for *"Your trusted hub for Forex Intelligence"* with interactive terminal modal.
 - **05 — Strategic Capabilities**: 5 core capability pillars.
 - **07 & 08 — Education & LinkedIn Skills**: Master of Business Administration (MBA) from Himachal Pradesh University, Shimla (2016–2019), verified LinkedIn skill endorsements, and dynamic audience proof.
-- **10 — Contact & Executive Dossier**: Direct verified channels (`akankshaguleria4@gmail.com`, `+91 95872 35665`, LinkedIn) and printable Executive Dossier modal.
+- **10 — Contact & Executive Dossier**: Direct verified channels (`akankshaguleria4@gmail.com`, `+91 6363112082`, LinkedIn) and printable Executive Dossier modal.
 
 ---
 
