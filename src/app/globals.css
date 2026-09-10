@@ -2,16 +2,16 @@
 
 @layer base {
   :root {
-    --background: #080a0d;
-    --foreground: #f4f5f7;
-    --card: #0d1117;
-    --card-hover: #131922;
+    --background: #080a0b;
+    --background-subtle: #0d1112;
+    --background-elevated: #121718;
+    --foreground: #f5f6f7;
+    --foreground-muted: #949a9e;
     --border: rgba(255, 255, 255, 0.08);
     --border-strong: rgba(255, 255, 255, 0.16);
-    --accent-emerald: #10b981;
-    --accent-emerald-muted: #059669;
     --accent-gold: #c5a880;
-    --text-muted: #8e959e;
+    --accent-gold-light: #e4caa4;
+    --accent-gold-subtle: rgba(197, 168, 128, 0.12);
   }
 
   html {
@@ -28,50 +28,45 @@
     overflow-x: hidden;
   }
 
-  /* Custom subtle scrollbar */
+  /* Thin subtle scrollbar */
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 5px;
   }
   ::-webkit-scrollbar-track {
-    background: #080a0d;
+    background: #080a0b;
   }
   ::-webkit-scrollbar-thumb {
-    background: #1e2633;
-    border-radius: 3px;
+    background: #1b2123;
+    border-radius: 2px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #2d3748;
+    background: #2a3336;
   }
 
   ::selection {
-    background-color: rgba(16, 185, 129, 0.3);
+    background-color: rgba(197, 168, 128, 0.25);
     color: #ffffff;
   }
 }
 
 /* Subtle architectural grid pattern */
-.bg-grid-pattern {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-  background-size: 32px 32px;
+.bg-grid-editorial {
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 72px 72px;
 }
 
-.bg-radial-vignette {
-  background: radial-gradient(circle at 50% 30%, rgba(16, 185, 129, 0.04) 0%, transparent 70%);
+.text-gold {
+  color: var(--accent-gold);
 }
 
 .text-gold-gradient {
-  background: linear-gradient(135deg, #f5e6d3 0%, #c5a880 50%, #9a7d55 100%);
+  background: linear-gradient(135deg, #f7f1e5 0%, #c5a880 50%, #9e7f53 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.text-silver-gradient {
-  background: linear-gradient(180deg, #ffffff 0%, #a1a1aa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Print styles for Executive Profile Download */
+/* Print styles for Executive Dossier */
 @media print {
   body {
     background: #ffffff !important;

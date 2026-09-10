@@ -17,7 +17,7 @@ const cormorant = Cormorant_Garamond({
 });
 
 export const viewport: Viewport = {
-  themeColor: "#080a0d",
+  themeColor: "#080a0b",
   width: "device-width",
   initialScale: 1,
   maximumScale: 5,
@@ -25,21 +25,20 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://akanksha-guleria.com"),
-  title: "Akanksha Guleria | International Commercial Leader & Financial Markets Executive",
+  title: "Akanksha Guleria | Senior Sales & Business Development | Financial Markets",
   description:
-    "Executive digital identity of Akanksha Guleria — Senior Sales & Business Development professional specializing in Financial Markets, Brokerage Solutions, Investment Products, and International Client Acquisition across UAE and India.",
+    "Official executive digital identity of Akanksha Guleria — Senior Sales & Business Development professional working across Dubai, Financial Markets, International Sales, Brokerage, Investment Solutions, and Sales Leadership.",
   keywords: [
     "Akanksha Guleria",
     "Akanksha Guleria Dubai",
-    "Akanksha Guleria Sales",
-    "Akanksha Guleria Business Development",
-    "Akanksha Guleria Financial Markets",
-    "Akanksha Guleria Forex",
-    "Akanksha Guleria Brokerage",
-    "Akanksha Guleria Aethora Technologies",
+    "Financial Markets Dubai",
     "Senior Sales Manager Dubai",
-    "International Business Development",
-    "Financial Markets Sales",
+    "International Sales",
+    "Business Development",
+    "Brokerage",
+    "Investment Solutions",
+    "Sales Leadership",
+    "Aethora Technologies",
   ],
   authors: [{ name: "Akanksha Guleria", url: "https://www.linkedin.com/in/akanksha-guleria-a55264210/" }],
   creator: "Akanksha Guleria",
@@ -47,24 +46,24 @@ export const metadata: Metadata = {
     type: "profile",
     locale: "en_US",
     url: "https://akanksha-guleria.com",
-    title: "Akanksha Guleria | Financial Markets & International Business Development",
+    title: "Akanksha Guleria | Senior Sales & Business Development | Financial Markets",
     description:
-      "Senior Sales & Business Development professional working across financial markets, investment solutions, brokerage and international client acquisition.",
-    siteName: "Akanksha Guleria - Executive Identity",
+      "Senior Sales & Business Development professional working across financial markets, investment solutions, brokerage and international client acquisition in Dubai and India.",
+    siteName: "Akanksha Guleria — Executive Digital Identity",
     images: [
       {
-        url: "/images/akanksha-guleria-real.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Akanksha Guleria - Financial Markets Executive",
+        url: "/images/akanksha-guleria-executive.jpg",
+        width: 853,
+        height: 1024,
+        alt: "Akanksha Guleria — Senior Sales & Business Development professional",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Akanksha Guleria | Financial Markets & Business Development",
+    title: "Akanksha Guleria | Financial Markets & International Business Development",
     description: "International Commercial Leader in Financial Markets, Brokerage Solutions & Business Development.",
-    images: ["/images/akanksha-guleria-real.jpg"],
+    images: ["/images/akanksha-guleria-executive.jpg"],
   },
   robots: {
     index: true,
@@ -134,7 +133,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col font-sans bg-[#080a0d] text-[#f4f5f7] selection:bg-emerald-500/30 selection:text-white">
+      <body className="min-h-screen flex flex-col font-sans bg-[#080a0b] text-[#f5f6f7] selection:bg-[#c5a880]/30 selection:text-white">
         {children}
       </body>
     </html>

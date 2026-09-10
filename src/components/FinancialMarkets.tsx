@@ -1,112 +1,90 @@
 "use client";
 
 import React from "react";
-import { Coins, BarChart3, Briefcase, Network, UserPlus, FileSpreadsheet, ShieldAlert } from "lucide-react";
 
 export default function FinancialMarkets() {
-  const marketPillars = [
+  const marketAreas = [
     {
-      title: "Forex",
-      tagline: "Global Currency Dynamics",
-      desc: "Deep hands-on background in foreign exchange liquidity, currency trading mechanics, volatility profiles, and trading infrastructure.",
-      icon: Coins,
+      num: "01",
+      title: "FOREX",
+      description: "Direct understanding of foreign exchange dynamics, currency pairs, and liquidity behavior.",
     },
     {
-      title: "Financial Markets",
-      tagline: "Macro & Multi-Asset Scope",
-      desc: "Broad multi-asset perspective assessing global macroeconomic trends, central bank policies, and institutional risk appetites.",
-      icon: BarChart3,
+      num: "02",
+      title: "FINANCIAL MARKETS",
+      description: "Commercial perspectives on market cycles, macro sentiment, and financial service operations.",
     },
     {
-      title: "Investment Solutions",
-      tagline: "Commercial Product Structuring",
-      desc: "Aligning institutional and private client needs with appropriate financial market vehicles and structured investment offerings.",
-      icon: Briefcase,
+      num: "03",
+      title: "INVESTMENT SOLUTIONS",
+      description: "Aligning market opportunities with appropriate investor profiles and commercial structures.",
     },
     {
-      title: "Brokerage",
-      tagline: "Ecosystem & Partner Networks",
-      desc: "Developing Introducing Broker (IB) networks, white-label operational solutions, onboarding funnels, and retention programs.",
-      icon: Network,
+      num: "04",
+      title: "BROKERAGE",
+      description: "Building introducing broker (IB) networks, client onboarding channels, and account retention.",
     },
     {
-      title: "Client Acquisition",
-      tagline: "High-Touch Onboarding",
-      desc: "Direct outreach and consultative relationship management for high-net-worth individuals, family offices, and active market participants.",
-      icon: UserPlus,
+      num: "05",
+      title: "CLIENT ACQUISITION",
+      description: "High-touch consultative sales execution for regional and international market participants.",
     },
     {
-      title: "Financial Analysis",
-      tagline: "Data-Driven Commercial Strategy",
-      desc: "Applying financial intelligence and analytical modeling to optimize sales floor conversion, client retention, and margin sustainability.",
-      icon: FileSpreadsheet,
+      num: "06",
+      title: "FINANCIAL ANALYSIS",
+      description: "Data-driven commercial decision making, pipeline analysis, and revenue optimization.",
     },
   ];
 
   return (
-    <section id="markets" className="py-24 border-b border-white/[0.08] bg-[#090b0e] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="markets" className="py-24 sm:py-32 border-b border-white/[0.07] bg-[#080a0b] relative">
+      <div className="max-w-7xl mx-auto px-5 sm:px-8">
         {/* Section Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 border-b border-white/[0.08] pb-8 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 sm:mb-20 pb-8 border-b border-white/[0.07] gap-6">
           <div>
-            <div className="text-xs font-mono tracking-[0.25em] text-emerald-400 uppercase font-semibold mb-2">
-              COMMERCIAL PERSPECTIVE
+            <div className="text-xs font-mono tracking-[0.24em] text-[#c5a880] uppercase font-semibold mb-2">
+              04 — COMMERCIAL PERSPECTIVE
             </div>
-            <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tight text-white uppercase max-w-2xl leading-tight">
+            <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tight text-white uppercase max-w-2xl leading-tight">
               FINANCIAL MARKETS, FROM THE COMMERCIAL SIDE.
             </h2>
           </div>
-          <p className="text-xs sm:text-sm text-[#8e959e] max-w-md">
-            Bridging global markets with client needs through sales, brokerage and investment
-            solutions.
+          <p className="text-xs sm:text-sm text-[#9ca3af] max-w-md font-normal leading-relaxed">
+            Bridging global markets with client needs through sales execution, brokerage partnerships,
+            and consultative investment solutions.
           </p>
         </div>
 
-        {/* 6 Market Pillar Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {marketPillars.map((pillar, idx) => {
-            const Icon = pillar.icon;
-            return (
-              <div
-                key={idx}
-                className="p-8 rounded-lg bg-[#0e1217] border border-white/[0.08] hover:border-emerald-500/40 transition-all duration-300 group flex flex-col justify-between"
-              >
-                <div>
-                  <div className="flex items-center justify-between mb-6">
-                    <div className="p-2.5 rounded bg-white/[0.03] border border-white/[0.08] text-emerald-400 group-hover:text-emerald-300 group-hover:bg-emerald-500/10 transition-colors">
-                      <Icon className="w-5 h-5" />
-                    </div>
-                    <span className="text-[10px] font-mono tracking-widest text-[#8e959e] uppercase">
-                      PILLAR // 0{idx + 1}
-                    </span>
-                  </div>
-
-                  <h3 className="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
-                    {pillar.title}
-                  </h3>
-                  <div className="text-xs font-mono text-emerald-400 mt-1 mb-3">
-                    {pillar.tagline}
-                  </div>
-                  <p className="text-xs text-[#94a3b8] leading-relaxed">{pillar.desc}</p>
-                </div>
-
-                <div className="mt-6 pt-4 border-t border-white/[0.05] flex items-center justify-between text-[10px] font-mono text-[#8e959e] uppercase">
-                  <span>COMMERCIAL DOMAIN</span>
-                  <span className="text-emerald-400">ACTIVE</span>
-                </div>
+        {/* 6 Clean Editorial Areas — Minimal, Typography-Forward */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
+          {marketAreas.map((area) => (
+            <div
+              key={area.num}
+              className="border-t border-white/[0.08] pt-6 space-y-3 group"
+            >
+              <div className="text-xs font-mono tracking-widest text-[#6b7280] group-hover:text-[#c5a880] transition-colors">
+                {area.num} // DOMAIN
               </div>
-            );
-          })}
+
+              <h3 className="text-base sm:text-lg font-bold tracking-wider text-white uppercase group-hover:text-[#dfc298] transition-colors">
+                {area.title}
+              </h3>
+
+              <p className="text-xs sm:text-sm text-[#9ca3af] leading-relaxed font-normal">
+                {area.description}
+              </p>
+            </div>
+          ))}
         </div>
 
-        {/* Regulatory & Institutional Positioning Disclaimer */}
-        <div className="mt-12 p-4 rounded bg-[#080a0d] border border-white/[0.06] flex items-center space-x-3 text-xs text-[#8e959e]">
-          <ShieldAlert className="w-4 h-4 text-emerald-400 shrink-0" />
-          <span>
-            Professional profile highlights commercial sales leadership, brokerage business
-            development, and operational execution. Does not constitute personal retail investment
-            advice or portfolio solicitation.
-          </span>
+        {/* Sourcing & Compliance Note */}
+        <div className="mt-16 pt-6 border-t border-white/[0.05] flex flex-col sm:flex-row items-start sm:items-center justify-between text-xs text-[#6b7280] gap-4">
+          <div className="text-[11px] font-mono tracking-wider uppercase">
+            COMMERCIAL DISTRIBUTION & SALES EXECUTION • NOT PERSONAL RETAIL INVESTMENT ADVICE
+          </div>
+          <div className="text-[11px] font-mono tracking-wider">
+            CROSS-MARKET EXPOSURE: GCC & ASIA
+          </div>
         </div>
       </div>
     </section>
